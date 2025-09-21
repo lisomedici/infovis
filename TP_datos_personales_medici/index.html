@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Trabajo Practico - Visualizaciones</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      text-align: center;
+      padding: 2rem;
+    }
+    h1 {
+      margin-bottom: 0.5rem;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: scale(1.03);
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .card h3 {
+      margin: 1rem 0 0.5rem;
+      color: #4a148c;
+    }
+    .card p {
+      margin-bottom: 1rem;
+      color: #666;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Trabajo Práctico: Mis Visualizaciones</h1>
+    <p>Elegí una tarjeta para abrir la visualización correspondiente.</p>
+  </header>
+
+  <section class="cards">
+    <!-- Tarjeta RawGraphs -->
+    <a class="card" href="rawgraph.html" target="_blank">
+      <img src="preview_rawgraph.png" alt="Gráfico RawGraphs">
+      <h3>Distribución de Juegos</h3>
+      <p>RAWGraphs • Estático</p>
+    </a>
+
+    <!-- Acá más tarjetas cuando sumes Flourish, Power BI, etc -->
+  </section>
+
+  <footer>
+    © 2025 • Hecho por Lisandro Medici
+  </footer>
+</body>
+</html>
