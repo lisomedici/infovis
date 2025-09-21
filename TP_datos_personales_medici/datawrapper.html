@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Visualización Datawrapper</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    iframe {
+      width: 80%;
+      max-width: 900px;
+      border: none;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Tu gráfico de Datawrapper -->
+  <iframe title="¿El rating que le doy al juego afecta en la cantidad que lo juego?" aria-label="Scatter Plot" id="datawrapper-chart-Appae" src="https://datawrapper.dwcdn.net/Appae/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="442" data-external="1"></iframe>
+  <script type="text/javascript">
+    !function(){"use strict";window.addEventListener("message",function(a){
+      if(void 0!==a.data["datawrapper-height"]){
+        var e=document.querySelectorAll("iframe");
+        for(var t in a.data["datawrapper-height"])
+          for(var r,i=0;r=e[i];i++)
+            if(r.contentWindow===a.source){
+              var d=a.data["datawrapper-height"][t]+"px";
+              r.style.height=d
+            }
+      }
+    })}
+    ();
+  </script>
+</body>
+</html>
