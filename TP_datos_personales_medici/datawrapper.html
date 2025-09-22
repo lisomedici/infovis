@@ -1,34 +1,49 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Rating vs Horas Jugadas - Datawrapper</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Datawrapper — Rating vs Horas Jugadas</title>
   <style>
+    :root { --bg:#f5f5f7; --ink:#222; --accent:#4a148c; }
+    * { box-sizing: border-box; }
     body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      background: #f9f9f9;
-      margin: 0;
+      margin:0; font-family:system-ui, -apple-system, Arial, sans-serif;
+      background:var(--bg); color:var(--ink);
     }
-    iframe {
-      width: 80%;
-      max-width: 900px;
-      min-width: 300px;
-      height: 500px;
-      border: none;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-      border-radius: 8px;
+    header {
+      position: sticky; top:0; z-index:10;
+      background:#fff; border-bottom:1px solid #e6e6e6;
     }
+    header .wrap {
+      max-width:1100px; margin:auto; padding:14px 18px;
+    }
+    header a {
+      color:var(--accent); text-decoration:none; font-weight:700;
+    }
+    main { max-width:1100px; margin:24px auto; padding:0 18px; }
+    h1 { margin:0 0 6px; font-size:26px; }
+    .meta { color:#666; font-size:14px; margin:0 0 18px; }
+    .viz {
+      background:#fff; border-radius:14px; box-shadow:0 6px 24px rgba(0,0,0,.08);
+      padding:12px;
+    }
+    /* El iframe de Datawrapper se ajusta solo con su script.
+       Este style evita overflow en contenedores chicos. */
+    .viz iframe { width:100% !important; border:0; }
   </style>
 </head>
 <body>
   <header>
-    <a href="index.html">← Volver al inicio</a>
+    <div class="wrap"><a href="index.html">← Volver al inicio</a></div>
   </header>
-  
-  <iframe 
+
+  <main>
+    <h1>¿El rating afecta las horas jugadas?</h1>
+    <p class="meta">Herramienta: Datawrapper</p>
+
+    <section class="viz">
+     <iframe 
     title="¿El rating que le doy al juego afecta en la cantidad que lo juego?" 
     aria-label="Scatter Plot" 
     id="datawrapper-chart-Appae" 
@@ -54,5 +69,8 @@
       })
     }();
   </script>
+      -->
+    </section>
+  </main>
 </body>
 </html>
